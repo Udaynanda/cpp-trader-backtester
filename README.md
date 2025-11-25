@@ -7,9 +7,9 @@ A low-latency, event-driven trading backtester with custom memory management and
 
 ## Performance
 
-- **31M ticks/sec** throughput
-- **10.5M orders/sec** matching
-- **0.98 ns** memory allocation
+- **34M ticks/sec** throughput
+- **7.65M orders/sec** matching
+- **1.69 ns** memory allocation
 - **Sub-microsecond** latency
 
 ## Features
@@ -57,22 +57,22 @@ Apple Silicon M1:
 
 ```
 === Memory Pool ===
-Avg latency: 0.98 ns/allocation
+Avg latency: 1.69 ns/allocation
 
 === Order Book ===
-Throughput: 10.5M orders/sec
-Avg latency: 0.095 µs/order
+Throughput: 7.65M orders/sec
+Avg latency: 0.131 µs/order
 Trades: 77,334 from 100K orders
 
 === Tick Processing ===
-Throughput: 31M ticks/sec
-Avg latency: 0.018 µs/tick
+Throughput: 34M ticks/sec
+Avg latency: 0.015 µs/tick
 
 === Full Backtest (1M ticks, 2 strategies) ===
 Orders submitted: 200,000
 Trades executed: 101,799
-Total time: 62 ms
-Throughput: 16M ticks/sec
+Total time: 57 ms
+Throughput: 17.5M ticks/sec
 ```
 
 ## Architecture
